@@ -73,6 +73,31 @@ angular.module('starter')
 
 });
 
+angular.module('starter')
+.controller('LoginController', function($scope, CarroService, $ionicPopup, $state){
 
+	$scope.login = {};
 
+	$scope.realizarLogin = function(){
 
+		var dadosDoLogin = {
+			params : {
+				email : $scope.login.email,
+				senha : $scope.login.senha
+			}
+		}
+
+		CarroService.realizarLogin(dadosDoLogin).then(function(dados){
+			$state.go('listagem');
+
+		}, function(erro){
+			$ionicPopup.alert({
+				title : 'Opa!',
+				template : 'Email ou senha incorretos.'
+			})
+
+		})
+
+	}
+
+});
