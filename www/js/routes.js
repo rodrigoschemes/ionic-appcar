@@ -5,10 +5,21 @@ $urlRouterProvider.otherwise('login');
 
 $stateProvider
 
-.state('listagem',{
+.state('app', {
+	url : '/app',
+	templateUrl : 'templates/menu.html',
+	abstract: true,
+	controller: 'MenuController'
+})
+
+.state('app.listagem',{
 	url : '/listagem',
-	templateUrl : 'templates/listagem.html',
-	controller: 'ListagemController'
+	views : {
+		'menuContent' : {
+			templateUrl : 'templates/listagem.html',
+			controller: 'ListagemController'
+		}
+	}
 })
 
 .state('carroescolhido',{
