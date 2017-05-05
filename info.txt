@@ -2,6 +2,10 @@ Instalar
 - node
 - cordova ionic
 - angular-br-filters
+- ngCordova
+- cordova-plugin-camera
+- ionic-datepicker
+
 
 Iniciar o Projeto
 - ionic start AluraCar blank --v1

@@ -32,17 +32,47 @@ $stateProvider
 	}
 })
 
-.state('carroescolhido',{
+.state('app.carroescolhido',{
 	url : '/carroescolhido/:carro',
-	templateUrl: 'templates/carroescolhido.html',
-	controller: 'CarroEscolhidoController'
+	views : {
+		'menuContent' : {
+			templateUrl: 'templates/carroescolhido.html',
+			controller: 'CarroEscolhidoController'
+		}
+	}
 })
 
-.state('finalizarpedido',{
+.state('app.finalizarpedido',{
 	url : '/finalizarpedido/:carro',
-	templateUrl : 'templates/finalizarpedido.html',
-	controller : 'FinalizarPedidoController'
+	views : {
+		'menuContent' : {
+			templateUrl : 'templates/finalizarpedido.html',
+			controller : 'FinalizarPedidoController'
+		}
+	}
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .state('login', {
 	url : '/login',
