@@ -52,6 +52,16 @@ $stateProvider
 	}
 })
 
+.state('app.agendamentos', {
+	url: '/agendamentos',
+	views : {
+		'menuContent' : {
+			templateUrl : 'templates/agendamentos.html',
+			controller : 'AgendamentosController'
+		}
+	}
+})
+
 
 
 

@@ -5,6 +5,7 @@ Instalar
 - ngCordova
 - cordova-plugin-camera
 - ionic-datepicker
+- angular i18n
 
 
 Iniciar o Projeto
