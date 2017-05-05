@@ -1,0 +1,8 @@
+Instalar
+- node
+- cordova ionic
+- angular-br-filters
+
+Iniciar o Projeto
+- ionic start AluraCar blank --v1
+

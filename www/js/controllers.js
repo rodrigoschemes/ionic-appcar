@@ -109,4 +109,61 @@ angular.module('starter')
 
 	$scope.usuarioLogado = $rootScope.usuario;
 
+});
+
+angular.module('starter')
+.controller('PerfilController', function($rootScope, $scope){
+
+	$scope.estaEditando = false;
+	$scope.textoBotao = 'Editar';
+
+	$scope.usuarioLogado = $rootScope.usuario;
+
+	$scope.acaoBotao = function(){
+		if ($scope.estaEditando) {
+			$scope.estaEditando = false;
+			$scope.textoBotao = 'Editar';
+		} else {
+			$scope.estaEditando = true;
+			$scope.textoBotao = 'Salvar';
+
+
+		}
+	}
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
